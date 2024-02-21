@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área de envio de e-mail</title>
+  <style>
+    body {
+      background-color: #f0f0f0; /* Cor de fundo */
+      color: #333; /* Cor da fonte */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    input[type="email"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #007bff; /* Cor de fundo do botão */
+      color: #fff; /* Cor do texto do botão */
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    }
+  </style>
+</head>
+  <body>
+    <h1>Área de envio de e-mail</h1>
+    <form id="emailForm" action="sendemail" method="POST"> <!-- aqui -->
+      <input type="email" id="emailInput" name="email" placeholder="Insira seu e-mail" required />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

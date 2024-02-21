@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Você está logado!</title>
+  <style>
+    body {
+      background-color: #f0f0f0; /* Cor de fundo */
+      color: #333; /* Cor da fonte */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Você está logado!</h1>
+  </div>
+  <script>
+    // Redirecionamento automático após 3 segundos
+    setTimeout(function() {
+      window.location.href = "./email.html";
+    }, 3000);
+  </script>
+</body>
+</html>
